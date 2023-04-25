@@ -13,7 +13,16 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            VStack(alignment: .leading){
+                Text("Hello, world!")
+                    .font(.headline)
+                HStack {
+                    Text("Its me")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("in Foo").font(.subheadline)
+                }
+            }
         }
         .padding()
     }
